@@ -15,29 +15,29 @@ namespace LogicLayer.UserLogic
             _userRepos = userRepos;
         }
 
-        public async Task<User> GetById(int? id)
+        public User GetById(int? id)
         {
-            return await _userRepos.GetById(id);
+            return _userRepos.GetById(id);
         }
 
-        public async Task<User> GetByEmail(string email)
+        public User GetByEmail(string email)
         {
-            return await _userRepos.GetByEmail(email);
+            return _userRepos.GetByEmail(email);
         }
 
-        public async Task<User> Login(string email, string password)
+        public User Login(string email, string password)
         {
-            return await _userRepos.Login(email, password);
+            return _userRepos.Login(email, password);
         }
 
-        public async Task<User> Register(User user)
+        public User Register(User user)
         {
-            return await _userRepos.Register(user);
+            return _userRepos.Register(user);
         }
 
-        public async Task<bool> IsEmailAvailable(string email)
+        public User IsEmailAvailable(string email)
         {
-            var user = await _userRepos.GetByEmail(email);
+            var user = _userRepos.GetByEmail(email);
 
             if (user == null) return true;
 

@@ -8,10 +8,10 @@ namespace LogicLayer.UserLogic
 {
     public interface IUserLogic
     {
-        Task<User> GetById(int? id);
-        Task<User> GetByEmail(string email);
-        Task<User> Login(string email, string password);
-        Task<User> Register(User user);
-        Task<bool> IsEmailAvailable(string email);
+        User GetById(int? id);
+        User GetByEmail(string email);
+        User Login(string email, string password);
+        User Register(User user);
+        bool IsEmailAvailable(string email);
     }
 }

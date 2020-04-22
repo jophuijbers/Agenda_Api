@@ -144,7 +144,6 @@ D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp3.1\z
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp3.1\DataLayer.pdb
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp3.1\ModelLayer.pdb
-D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.MvcApplicationPartsAssemblyInfo.cache
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.csproj.CopyComplete
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.dll
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.pdb
@@ -454,3 +453,11 @@ C:\Users\user\Desktop\Agenda_Api\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.R
 C:\Users\user\Desktop\Agenda_Api\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.csproj.CopyComplete
 C:\Users\user\Desktop\Agenda_Api\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.dll
 C:\Users\user\Desktop\Agenda_Api\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.pdb
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\obj\Debug\netcoreapp3.1\Agenda_API.MvcApplicationPartsAssemblyInfo.cache
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\Agenda_API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

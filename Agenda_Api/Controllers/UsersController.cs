@@ -26,20 +26,20 @@ namespace Agenda_API.Controllers
 
         // GET: api/Users/id
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int? id)
+        public ActionResult<User> GetUser(int? id)
         {
-            var user = await _userLogic.GetById(id);
+            var user = _userLogic.GetById(id);
 
             if (user == null) return NotFound();
 
             return user;
         }
 
-        // GET: api/Users/Login
-        [HttpGet("[action]")]
-        public async Task<ActionResult<User>> Login([FromForm]LoginViewModel viewModel)
+        // POST: api/Users/Login
+        [HttpPost("[action]")]
+        public ActionResult<User> Login([FromBody]LoginViewModel viewModel)
         {
-            var user = await _userLogic.Login(viewModel.Email, viewModel.Password);
+            var user = _userLogic.Login(viewModel.Email, viewModel.Password);
 
             if (user == null) return NotFound();
 
@@ -48,16 +48,16 @@ namespace Agenda_API.Controllers
 
         // POST: api/Users/Register
         [HttpPost("[action]")]
-        public async Task<ActionResult<User>> Register([FromForm]User user)
+        public ActionResult<User> Register([FromBody]User user)
         {
-            return await _userLogic.Register(user);
+            return _userLogic.Register(user);
         }
         
-        // GET: api/Users/IsEmailAvailable/email
-        [HttpGet("[action]/{email}")]
-        public async Task<ActionResult<bool>> IsEmailAvailable(string email)
+        // GET: api/Users/IsEmailAvailable?Email=...
+        [HttpGet("[action]")]
+        public ActionResult<bool> IsEmailAvailable(string email)
         {
-            return await _userLogic.IsEmailAvailable(email);
+            return _userLogic.IsEmailAvailable(email);
         }
     }
 }

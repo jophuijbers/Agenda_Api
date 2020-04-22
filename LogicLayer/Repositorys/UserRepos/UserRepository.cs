@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ModelLayer.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,25 +18,25 @@ namespace LogicLayer.Repositorys.UserRepos
             _context = context;
         }
 
-        public async Task<User> GetById(int? id)
+        public User GetById(int? id)
         {
-            return await _context.User.FindAsync(id);
+            return _context.User.Find(id);
         }
 
-        public async Task<User> GetByEmail(string email)
+        public User GetByEmail(string email)
         {
-            return await _context.User.FirstOrDefaultAsync(u => u.Email == email);
+            return _context.User.FirstOrDefault(u => u.Email == email);
         }
 
-        public async Task<User> Login(string email, string password)
+        public User Login(string email, string password)
         {
-            return await _context.User.FirstOrDefaultAsync(u => u.Email == email && u.Password == password);
+            return _context.User.FirstOrDefault(u => u.Email == email && u.Password == password);
         }
 
-        public async Task<User> Register(User user)
+        public User Register(User user)
         {
-            await _context.User.AddAsync(user);
-            await _context.SaveChangesAsync();
+            _context.User.Add(user);
+            _context.SaveChanges();
             return user;
         }
     }
