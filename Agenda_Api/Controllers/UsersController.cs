@@ -9,7 +9,10 @@ using DataLayer;
 using ModelLayer.Models;
 using LogicLayer.UserLogic;
 using LogicLayer.Repositorys.UserRepos;
-using Agenda_API.ViewModels;
+using ModelLayer.ViewModels;
+using LogicLayer.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace Agenda_API.Controllers
 {
@@ -18,46 +21,44 @@ namespace Agenda_API.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUserLogic _userLogic;
+        private readonly IAuthLogic _authLogic;
 
-        public UsersController(IUserLogic userLogic)
+        public UsersController(IUserLogic userLogic, IAuthLogic authLogic)
         {
             _userLogic = userLogic;
+            _authLogic = authLogic;
         }
 
-        // GET: api/Users/id
-        [HttpGet("{id}")]
-        public ActionResult<User> GetUser(int? id)
+        // api/Users/GetUser
+        [Authorize]
+        [HttpGet("[action]")]
+        public async Task<ActionResult<User>> GetUser()
         {
-            var user = _userLogic.GetById(id);
-
-            if (user == null) return NotFound();
-
-            return user;
+            return await _authLogic.GetUserFromJWT(HttpContext.User.Identity as ClaimsIdentity);
         }
 
-        // POST: api/Users/Login
         [HttpPost("[action]")]
-        public ActionResult<User> Login([FromBody]LoginViewModel viewModel)
+        public async Task<IActionResult> Login([FromBody]LoginViewModel login)
         {
-            var user = _userLogic.Login(viewModel.Email, viewModel.Password);
+            var user = await _authLogic.AuthenticateUser(login);
 
-            if (user == null) return NotFound();
+            if (user != null) return Ok(new { token = _authLogic.GenerateJWT(user) });
 
-            return user;
+            return Unauthorized();
         }
 
         // POST: api/Users/Register
         [HttpPost("[action]")]
-        public ActionResult<User> Register([FromBody]User user)
+        public async Task<ActionResult<User>> Register([FromBody]User user)
         {
-            return _userLogic.Register(user);
+            return await _userLogic.Register(user);
         }
         
         // GET: api/Users/IsEmailAvailable?Email=...
         [HttpGet("[action]")]
-        public ActionResult<bool> IsEmailAvailable(string email)
+        public async Task<ActionResult<bool>> IsEmailAvailable(string email)
         {
-            return _userLogic.IsEmailAvailable(email);
+            return await _userLogic.IsEmailAvailable(email);
         }
     }
 }

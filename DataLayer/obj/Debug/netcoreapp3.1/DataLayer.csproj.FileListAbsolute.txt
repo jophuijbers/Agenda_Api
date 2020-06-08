@@ -20,3 +20,4 @@ D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\DataLayer\obj\Debug\netcoreapp3.1\D
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CopyComplete
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.dll
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.pdb
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.cache

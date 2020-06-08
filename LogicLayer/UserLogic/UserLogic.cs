@@ -1,43 +1,37 @@
 ﻿using LogicLayer.Repositorys.UserRepos;
 using ModelLayer.Models;
+using ModelLayer.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Helpers;
 
 namespace LogicLayer.UserLogic
 {
     public class UserLogic : IUserLogic
     {
         private readonly IUserRepository _userRepos;
+
         public UserLogic(IUserRepository userRepos)
         {
             _userRepos = userRepos;
         }
 
-        public User GetById(int? id)
+        public async Task<User> GetByEmail(string email)
         {
-            return _userRepos.GetById(id);
+            return await _userRepos.GetByEmail(email);
         }
 
-        public User GetByEmail(string email)
+        public async Task<User> Register(User user)
         {
-            return _userRepos.GetByEmail(email);
+            user.Password = Crypto.HashPassword(user.Password);
+            return await _userRepos.Register(user);
         }
 
-        public User Login(string email, string password)
+        public async Task<bool> IsEmailAvailable(string email)
         {
-            return _userRepos.Login(email, password);
-        }
-
-        public User Register(User user)
-        {
-            return _userRepos.Register(user);
-        }
-
-        public User IsEmailAvailable(string email)
-        {
-            var user = _userRepos.GetByEmail(email);
+            var user = await _userRepos.GetByEmail(email);
 
             if (user == null) return true;
 

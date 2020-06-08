@@ -18,25 +18,20 @@ namespace LogicLayer.Repositorys.UserRepos
             _context = context;
         }
 
-        public User GetById(int? id)
+        public async Task<User> GetByEmail(string email)
         {
-            return _context.User.Find(id);
+            return await _context.User.FirstOrDefaultAsync(u => u.Email == email);
         }
 
-        public User GetByEmail(string email)
+        public async Task<User> Login(string email, string password)
         {
-            return _context.User.FirstOrDefault(u => u.Email == email);
+            return await _context.User.FirstOrDefaultAsync(u => u.Email == email && u.Password == password);
         }
 
-        public User Login(string email, string password)
+        public async Task<User> Register(User user)
         {
-            return _context.User.FirstOrDefault(u => u.Email == email && u.Password == password);
-        }
-
-        public User Register(User user)
-        {
-            _context.User.Add(user);
-            _context.SaveChanges();
+            await _context.User.AddAsync(user);
+            await _context.SaveChangesAsync();
             return user;
         }
     }

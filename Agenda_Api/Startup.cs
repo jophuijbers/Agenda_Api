@@ -46,7 +46,10 @@ namespace Agenda_API
                     .AllowAnyHeader());
             });
 
-            services.AddControllers();
+            services.AddControllers(); //.AddJsonOptions(options =>
+            //{
+            //    options.JsonSerializerOptions.Converters.
+            //});
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

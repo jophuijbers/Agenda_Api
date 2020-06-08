@@ -1,0 +1,12 @@
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\bin\Release\netcoreapp3.1\DataLayer.deps.json
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\bin\Release\netcoreapp3.1\DataLayer.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\bin\Release\netcoreapp3.1\DataLayer.pdb
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\bin\Release\netcoreapp3.1\ModelLayer.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\bin\Release\netcoreapp3.1\ModelLayer.pdb
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Release\netcoreapp3.1\DataLayer.csprojAssemblyReference.cache
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Release\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.cache
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Release\netcoreapp3.1\DataLayer.AssemblyInfoInputs.cache
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Release\netcoreapp3.1\DataLayer.AssemblyInfo.cs
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Release\netcoreapp3.1\DataLayer.csproj.CopyComplete
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Release\netcoreapp3.1\DataLayer.dll
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\DataLayer\obj\Release\netcoreapp3.1\DataLayer.pdb

@@ -14,3 +14,4 @@ D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\ModelLayer\obj\Debug\netcoreapp3.1\
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.AssemblyInfo.cs
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.dll
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.pdb
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\ModelLayer\obj\Debug\netcoreapp3.1\ModelLayer.csproj.CoreCompileInputs.cache

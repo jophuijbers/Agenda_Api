@@ -1,4 +1,5 @@
 ﻿using ModelLayer.Models;
+using ModelLayer.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,10 +9,8 @@ namespace LogicLayer.UserLogic
 {
     public interface IUserLogic
     {
-        User GetById(int? id);
-        User GetByEmail(string email);
-        User Login(string email, string password);
-        User Register(User user);
-        bool IsEmailAvailable(string email);
+        Task<User> GetByEmail(string email);
+        Task<User> Register(User user);
+        Task<bool> IsEmailAvailable(string email);
     }
 }

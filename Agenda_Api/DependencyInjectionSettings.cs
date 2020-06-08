@@ -1,4 +1,7 @@
 ﻿using DataLayer;
+using LogicLayer.Authentication;
+using LogicLayer.EventLogic;
+using LogicLayer.Repositorys.EventRepos;
 using LogicLayer.Repositorys.UserRepos;
 using LogicLayer.UserLogic;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,8 +24,11 @@ namespace Agenda_API
         public void Setup(IServiceCollection services)
         {
             services.AddScoped<IUserLogic, UserLogic>();
+            services.AddScoped<IAuthLogic, AuthLogic>();
+            services.AddScoped<IEventLogic, EventLogic>();
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IEventRepository, EventRepository>();
 
             //if (UseDatabase == "true")
             //{

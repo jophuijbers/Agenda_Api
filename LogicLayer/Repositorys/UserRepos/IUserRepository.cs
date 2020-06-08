@@ -8,9 +8,8 @@ namespace LogicLayer.Repositorys.UserRepos
 {
     public interface IUserRepository
     {
-        User GetById(int? id);
-        User GetByEmail(string email);
-        User Login(string email, string password);
-        User Register(User user);
+        Task<User> GetByEmail(string email);
+        Task<User> Login(string email, string password);
+        Task<User> Register(User user);
     }
 }

@@ -24,3 +24,4 @@ D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\LogicLayer\obj\Debug\netcoreapp3.1\
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.csproj.CopyComplete
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.dll
 D:\Fontys\Semester_4\FUN4\Agenda\Agenda_API2\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.pdb
+D:\Fontys\Semester_4\FUN4\Agenda\Agenda_Api\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.csproj.CoreCompileInputs.cache
