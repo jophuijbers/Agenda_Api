@@ -36,7 +36,8 @@ namespace Agenda_API.Controllers
         public async Task<IEnumerable<Event>> GetEvents()
         {
             var user = await _authLogic.GetUserFromJWT(HttpContext.User.Identity as ClaimsIdentity);
-            return await _eventRepos.GetAllEvents(user);
+            var events = await _eventRepos.GetAllEvents(user);
+            return events;
         }
 
         // GET: api/Events/5

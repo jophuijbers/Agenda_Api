@@ -14,7 +14,7 @@ namespace DataLayer
 
         public DbSet<User> User { get; set; }
         public DbSet<Event> Event { get; set; }
-        public DbSet<Group> Calendar_group { get; set; }
-        public DbSet<UserGroupBridge> User_group { get; set; }
+        //public DbSet<Group> Calendar_group { get; set; }
+        //public DbSet<UserGroupBridge> User_group { get; set; }
     }
 }
